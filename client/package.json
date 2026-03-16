@@ -1,0 +1,8 @@
+{
+  "name": "portfolio-client",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  }
+}
