@@ -6,82 +6,80 @@ import { PinContainer } from "./ui/3d-pin";
 
 const projects = [
   {
-    title: "HospiConnect",
-    emoji: "🚑",
-    category: "HealthTech",
+    title: "ResearchOS",
+    emoji: "🤖",
+    category: "Multi-Agent AI",
     description:
-      "Real-time healthcare coordination platform connecting patients, ambulances, and hospitals.",
-    href: "/projects/hospiconnect",
+      "A multi-agent research system using LangChain, LangGraph, Groq, and Tavily for web search, reasoning, and report generation.",
+    href: "/projects/researchos",
+    gradient: "from-violet-500 via-purple-500 to-fuchsia-500",
+  },
+  {
+    title: "GaleMed AI",
+    emoji: "🩺",
+    category: "Medical RAG",
+    description:
+      "A medical knowledge assistant using RAG, LangChain, ChromaDB, and Hugging Face embeddings for grounded medical question answering.",
+    href: "/projects/galemed-ai",
     gradient: "from-red-500 via-pink-500 to-rose-500",
   },
   {
-    title: "Credify",
-    emoji: "💳",
-    category: "FinTech",
+    title: "GapLens AI",
+    emoji: "📊",
+    category: "AI Career Platform",
     description:
-      "AI-powered financial health platform for debt optimization and tax planning.",
-    href: "/projects/credify",
+      "An AI interview preparation platform that analyzes resumes, identifies skill gaps, and gives personalized learning recommendations.",
+    href: "/projects/gaplens-ai",
     gradient: "from-cyan-500 via-blue-500 to-indigo-500",
   },
   {
-    title: "Algo Animate",
-    emoji: "🎯",
-    category: "EdTech",
+    title: "CropCare AI",
+    emoji: "🌱",
+    category: "Agricultural AI",
     description:
-      "AI-powered DSA learning platform with optimized solutions and visual explanations.",
-    href: "/projects/algo-animate",
-    gradient: "from-yellow-500 via-orange-500 to-red-500",
+      "A smart agriculture assistant that analyzes crop-related data and provides predictive insights for crop health and decision support.",
+    href: "/projects/cropcare-ai",
+    gradient: "from-green-500 via-emerald-500 to-lime-500",
   },
   {
-    title: "LinkedIn Post Generator AI Agent",
-    emoji: "✍️",
-    category: "Generative AI",
+    title: "Green500 Dashboard",
+    emoji: "🖥️",
+    category: "Data Analytics",
     description:
-      "Multi-agent AI system that generates, evaluates, and optimizes LinkedIn posts using human feedback loops.",
-    href: "/projects/linkedin-post-generator-ai-agent",
-    gradient: "from-blue-600 via-sky-500 to-cyan-500",
+      "A Streamlit dashboard built during my C-DAC internship to analyze Green500 and TOP500 supercomputing datasets using EDA and ML.",
+    href: "/projects/green500-dashboard",
+    gradient: "from-emerald-500 via-teal-500 to-cyan-500",
   },
   {
-    title: "LangGraph Persistent Chatbot",
-    emoji: "🤖",
-    category: "AI Agents",
+    title: "Self-Driving Car Platform",
+    emoji: "🚗",
+    category: "Research Project",
     description:
-      "Production-ready AI chatbot with persistent memory, multi-chat support, and resume conversation functionality.",
-    href: "/projects/langgraph-persistent-chatbot",
-    gradient: "from-indigo-600 via-violet-500 to-purple-500",
-  },
-  {
-    title: "YouTube RAG Chatbot",
-    emoji: "🎥",
-    category: "Generative AI",
-    description:
-      "Ask questions about YouTube videos using transcript-based retrieval and AI-powered answer generation.",
-    href: "/projects/youtube-rag-chatbot",
-    gradient: "from-red-600 via-pink-500 to-fuchsia-500",
+      "A low-cost self-driving car platform developed for educational and experimental applications, later published as a research paper.",
+    href: "/projects/self-driving-car",
+    gradient: "from-orange-500 via-amber-500 to-yellow-500",
   },
 ];
 
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-32 px-6 max-w-7xl mx-auto">
-      {/* Heading */}
       <div className="text-center mb-20">
         <span className="text-violet-400 uppercase tracking-[0.3em] text-sm">
-          Featured Work
+          Featured Projects
         </span>
 
         <h2 className="mt-4 text-5xl md:text-6xl font-bold text-white">
-          Products I've Built
+          AI & Data Science Portfolio
         </h2>
 
         <p className="mt-6 max-w-3xl mx-auto text-zinc-400 text-lg">
-          From AI-powered platforms and hackathon-winning solutions to products
-          solving real-world problems across Healthcare, FinTech, AgriTech,
-          GovTech, and Education.
+          A collection of AI, Machine Learning, Data Analytics, Research, and
+          Generative AI projects built using LangChain, LangGraph, RAG, Machine
+          Learning, and modern AI technologies.
         </p>
       </div>
 
-      {/* Cards */}
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-12 gap-y-32 justify-items-center">
         {projects.map((project) => (
           <PinContainer
@@ -90,26 +88,24 @@ export default function ProjectsSection() {
             href={project.href}
           >
             <div className="flex flex-col p-5 w-[22rem] h-[22rem] bg-black border border-zinc-800 rounded-2xl backdrop-blur-xl">
-              {/* Emoji */}
               <div className="text-5xl mb-4">{project.emoji}</div>
 
-              {/* Title */}
-              <h3 className="text-white text-2xl font-bold">{project.title}</h3>
+              <h3 className="text-white text-2xl font-bold">
+                {project.title}
+              </h3>
 
-              {/* Category */}
-              <p className="text-violet-400 text-sm mt-1">{project.category}</p>
+              <p className="text-violet-400 text-sm mt-1">
+                {project.category}
+              </p>
 
-              {/* Description */}
               <p className="text-zinc-400 mt-4 text-sm leading-relaxed">
                 {project.description}
               </p>
 
-              {/* Gradient Preview */}
               <div
                 className={`h-60 rounded-xl mt-6 bg-gradient-to-br ${project.gradient} opacity-90`}
               />
 
-              {/* Footer */}
               <div className="mt-4 text-white text-sm font-medium">
                 View Project →
               </div>
@@ -118,7 +114,6 @@ export default function ProjectsSection() {
         ))}
       </div>
 
-      {/* CTA */}
       <div className="flex justify-center mt-20">
         <Link
           href="/projects"

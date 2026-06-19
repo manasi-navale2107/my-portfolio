@@ -11,7 +11,7 @@ const Aboutme = () => {
           About Me
         </p>
 
-        <h1 className="text-5xl md:text-7xl font-bold">Who is Ved?</h1>
+        <h1 className="text-5xl md:text-7xl font-bold"></h1>
 
         <div className="w-24 h-1 bg-violet-500 mx-auto mt-6 rounded-full" />
       </div>
@@ -22,29 +22,28 @@ const Aboutme = () => {
           {/* Left Side */}
           <div>
             <p className="uppercase tracking-[0.3em] text-violet-400 text-sm mb-4">
-              Who I Am
             </p>
 
             <h2 className="text-5xl md:text-7xl font-bold mb-6">
-              Hello, I'm Ved.
+              Hello, I'm Manasi.
             </h2>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              I'm an Engineering student passionate about building intelligent
-              products through AI, Full Stack Development, and thoughtful
-              design.
+              I'm an AI/ML Engineer and Generative AI Engineer, building
+              intelligent products with LangChain, LangGraph, and
+              Retrieval-Augmented Generation.
             </p>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              My goal is to become an AI Engineer while creating impactful
-              software that solves real-world problems. I enjoy participating in
-              hackathons, building projects, and constantly learning new
-              technologies.
+              I'm working toward becoming an AI/ML Engineer, building intelligent
+              systems that solve real-world problems — from multi-agent
+              research tools to RAG-based assistants. I love picking up new technologies along the
+              way.
             </p>
 
             <div className="flex gap-10 mt-10">
               <div>
-                <h3 className="text-3xl font-bold">10+</h3>
+                <h3 className="text-3xl font-bold">5</h3>
                 <p className="text-gray-500">Projects Built</p>
               </div>
 
@@ -54,7 +53,7 @@ const Aboutme = () => {
               </div>
               <div>
                 <LinkPreview
-                  url="https://drive.google.com/file/d/1N2MN8TqXKP117qIUNqLKDCU1ZZ4b9oVH/view?usp=sharing"
+                  url="https://drive.google.com/file/d/1_8LssM_Ux2MF8llK_O9JEQ0knKHgsNU4/view?usp=sharing"
                   className="text-3xl font-bold text-white"
                 >
                   Resume
@@ -69,7 +68,7 @@ const Aboutme = () => {
             <div className="relative">
               <Image
                 src="/ved.png"
-                alt="Ved"
+                alt="Manasi"
                 width={450}
                 height={450}
                 className="rounded-3xl object-cover border border-white/10"

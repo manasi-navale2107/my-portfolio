@@ -8,7 +8,7 @@ import SoftAurora from "@/components/SoftAurora";
 
 const Page = () => {
   const handleConnectClick = () => {
-    window.open("https://www.linkedin.com/in/vedant-kolte/", "_blank");
+    window.open("https://linkedin.com/in/manasinavale07", "_blank");
   };
 
   return (
@@ -40,9 +40,9 @@ const Page = () => {
           {/* Profile Card */}
           <div className="flex-shrink-0">
             <ProfileCard
-              name="Vedant"
-              title="Web Developer & AI Enthusiast"
-              handle="vedant-kolte"
+              name="Manasi"
+              title="AIML Engineer & Gen AI Enthusiast"
+              handle="manasi-navale"
               status="Available"
               contactText="Let's Connect"
               avatarUrl="/ved.png"
@@ -61,14 +61,14 @@ const Page = () => {
             <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
 
             <p className="text-gray-300 leading-relaxed text-base mb-6">
-              I'm always open to new opportunities, collaborations, freelance
-              projects, or just a good tech conversation. Feel free to reach out
-              and let's build something amazing together.
+              Open to AI/ML engineering opportunities, research collaborations, and freelance work. 
+              I enjoy diving into RAG systems, LLM applications, and anything that pushes a good idea into a working product. 
+              Let's connect.
             </p>
 
             <div className="flex items-center gap-6">
               <a
-                href="https://github.com/ved-2"
+                href="https://github.com/manasi-navale2107"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-300 transition-colors text-3xl"
@@ -78,7 +78,7 @@ const Page = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/vedant-kolte/"
+                href="https://linkedin.com/in/manasinavale07"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-400 transition-colors text-3xl"

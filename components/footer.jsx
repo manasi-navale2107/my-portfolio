@@ -15,18 +15,18 @@ export default function Footer() {
             </span>
 
             <h2 className="mt-4 text-5xl md:text-6xl font-black">
-              Vedant Kolte
+              Manasi Navale
             </h2>
 
             <p className="mt-4 text-lg text-zinc-400 max-w-xl">
-              AI Engineer, Full Stack Developer, and Product Builder creating
-              intelligent solutions across Healthcare, FinTech, AgriTech,
-              GovTech, and Education.
+              AI/ML Engineer and Product Builder creating
+              intelligent solutions across Healthcare, AgriTech,
+              Research, and Career-Tech.
             </p>
 
             <div className="flex gap-4 mt-8">
               <a
-                href="https://github.com/ved-2"
+                href="https://github.com/manasi-navale2107"
                 target="_blank"
                 className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 transition"
               >
@@ -34,7 +34,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/vedant-kolte"
+                href="https://linkedin.com/in/manasinavale07"
                 target="_blank"
                 className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 transition"
               >
@@ -42,7 +42,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:vedantkolte18@gmail.com"
+                href="mailto:navalemanasi@gmail.com"
                 className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 transition"
               >
                 <Mail size={20} />
@@ -55,11 +55,11 @@ export default function Footer() {
               <h3 className="text-2xl font-bold">Open for Opportunities</h3>
 
               <p className="mt-3 text-zinc-400">
-                Internships • Freelance • AI Projects • Full Stack Development
+                Internships • Freelance • AI Projects • Machine Learning Models
               </p>
 
               <a
-                href="mailto:vedantkolte18@gmail.com"
+                href="mailto:navalemanasi@gmail.com"
                 className="inline-flex items-center gap-2 mt-6 text-violet-400 hover:text-violet-300"
               >
                 Get in touch
@@ -96,28 +96,28 @@ export default function Footer() {
                   href="/projects/hospiconnect"
                   className="block hover:text-red-400 transition"
                 >
-                  🚑 HospiConnect
+                  🔬 ResearchOS
                 </Link>
 
                 <Link
                   href="/projects/credify"
                   className="block hover:text-cyan-400 transition"
                 >
-                  💳 Credify
+                  🏥 GaleMed AI
                 </Link>
 
                 <Link
                   href="/projects/algo-animate"
                   className="block hover:text-yellow-400 transition"
                 >
-                  🎯 Algo Animate
+                  🎯 GapLens AI
                 </Link>
 
                 <Link
                   href="/projects/linkedin-post-generator-ai-agent"
                   className="block hover:text-sky-400 transition"
                 >
-                  ✍️ LinkedIn Post Generator AI Agent
+                  🌾 CropCare AI
                 </Link>
 
                 <Link
@@ -142,7 +142,7 @@ export default function Footer() {
 
             <div className="space-y-3 text-zinc-400">
               <p>📍 Pune, Maharashtra</p>
-              <p>📧 vedantkolte18@gmail.com</p>
+              <p>📧 navalemanasi@gmail.com</p>
               <p>🤝 Open to Collaboration</p>
               <p>🚀 Looking for AI Opportunities</p>
             </div>
@@ -152,7 +152,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-zinc-500">
-            © 2026 Vedant Kolte. All rights reserved.
+            © Manasi Navale. All rights reserved.
           </p>
 
           <p className="text-zinc-600 italic">"From ideas to impact."</p>
@@ -176,7 +176,7 @@ export default function Footer() {
           to-transparent
           "
         >
-          VEDANT
+          Manasi
         </h1>
       </div>
     </footer>

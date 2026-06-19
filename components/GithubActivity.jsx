@@ -32,7 +32,7 @@ const GithubActivity = () => {
         {/* Snake */}
         <div className="mb-16 rounded-3xl border border-white/10 bg-white/[0.02] backdrop-blur-xl overflow-hidden">
           <img
-            src="https://raw.githubusercontent.com/ved-2/portfolio/output/github-snake.svg"
+            src="https://raw.githubusercontent.com/manasi-navale2107/my-portfolio/output/github-snake.svg"
             alt="GitHub Snake"
             className="w-full"
           />
@@ -50,33 +50,32 @@ const GithubActivity = () => {
                 "current_goal",
               ]}
               outputs={{
-                0: ["Vedant Kolte", "AI Engineer • Full Stack Developer"],
+                0: ["Manasi Navale", "AI Engineer • Gen AI Ethusiast"],
 
                 1: [
                   "Python",
                   "Java",
-                  "JavaScript",
                   "Machine Learning",
                   "GenAI",
                   "RAG",
                   "LangChain",
-                  "Next.js",
-                  "Flutter",
+                  "LangGraph"
                 ],
 
                 2: [
-                  "🚀 Aurenix AI",
-                  "🏠 HostelNest",
-                  "🌾 Krishi Mitra",
-                  "🚑 HospiConnect",
-                  "💳 Credify",
+                  "🔬 ResearchOS",
+                  "🏥 GaleMed AI",
+                  "🎯 GapLens AI",
+                  "🌾 CropCare AI",
+                  "🚘 Self-Driving Car Platform",
                 ],
 
                 3: [
-                  "🥇 AI Summit 2025 Winner",
-                  "🏆 Prayatna 3.0 Excellence Award",
-                  "🥈 Vyoma National Prototype Competition",
-                  "🥈 5th Regional Project Conclave",
+                  "🏢 Data Analyst Intern at C-DAC Pune",
+                  "🤖 Developed 4+ AI & GenAI Projects",
+                  "🧠 200+ LeetCode Problems Solved",
+                  "📚 IJARESM Research Publication",
+                  "🎓 Academic Excellence - 9.28 SGPA",
                 ],
 
                 4: ["Building AI products that solve real-world problems."],
@@ -103,7 +102,7 @@ const GithubActivity = () => {
 
           <div className="flex justify-center overflow-x-auto">
             <GitHubCalendar
-              username="ved-2"
+              username="Manasi"
               colorScheme="dark"
               fontSize={15}
               blockSize={15}

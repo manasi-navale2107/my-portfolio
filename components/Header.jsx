@@ -9,7 +9,7 @@ export default function Header() {
       <div className="text-white font-semibold flex items-center gap-2">
         <span className="text-lg">
           <a href="/" className="hover:text-white transition">
-            Portfolio
+            Manasi.dev
           </a>
         </span>
       </div>
@@ -21,7 +21,7 @@ export default function Header() {
           Projects
         </a>
         {/* <a
-          href="https://drive.google.com/file/d/180xk-AXkxQDwd1_CV_fAsDImGbYka4td/view?usp=sharing"
+          href="https://drive.google.com/file/d/1_8LssM_Ux2MF8llK_O9JEQ0knKHgsNU4/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-white transition"
@@ -40,20 +40,12 @@ export default function Header() {
           {open && (
             <div className="absolute top-10 right-0 w-56 rounded-2xl border border-white/10 bg-black/90 backdrop-blur-xl p-2">
               <a
-                href="/resume/Vedant_Kolte_Resume_AI.pdf"
+                href="/resume/AIML manasi_navale.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block rounded-xl px-4 py-3 hover:bg-white/10 transition"
               >
                 AI Engineer Resume
-              </a>
-              <a
-                href="/resume/Vedant_Kolte_Resume_Web_Dev.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block rounded-xl px-4 py-3 hover:bg-white/10 transition"
-              >
-                Full Stack Resume
               </a>
             </div>
           )}

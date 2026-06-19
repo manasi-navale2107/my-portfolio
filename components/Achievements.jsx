@@ -6,128 +6,81 @@ import { Timeline } from "@/components/ui/timeline";
 const Achievements = () => {
   const data = [
     {
-      title: "2025",
+      title: "Coding platform",
       content: (
         <div className="rounded-3xl border border-[#5227FF]/20 bg-[#5227FF]/5 p-6 backdrop-blur-sm">
           <p className="text-white font-bold text-2xl mb-4">
-            🥇 AI Summit 2025 Project Showcase
+             🧠200+ LeetCode Problems
           </p>
 
           <p className="mb-6 text-neutral-400 leading-relaxed">
-            Secured 1st Place and received a cash prize of ₹10,000 for building
-            an innovative AI solution. This achievement marked our first project
-            funding and recognition at the AI Summit organized by the AI & DS
-            Department, AISSMS IOIT Pune.
+            Solved 200+ Data Structures and Algorithms problems across arrays, linked lists, 
+            trees, graphs, dynamic programming, and advanced problem-solving topics to strengthen coding and analytical skills.
           </p>
-
-          <div className="space-y-3">
-            <div className="text-neutral-300">✓ 1st Place Winner</div>
-
-            <div className="text-neutral-300">✓ ₹10,000 Prize Money</div>
-
-            <div className="text-neutral-300">✓ First Project Funding</div>
-          </div>
         </div>
       ),
     },
 
     {
-      title: "2025",
+      title: "Work Experience",
       content: (
         <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 backdrop-blur-sm">
           <p className="text-white font-bold text-2xl mb-4">
-            🥈 Vyoma National Level Prototype Competition
+            🏢 C-DAC Pune Internship
           </p>
 
           <p className="mb-6 text-neutral-400 leading-relaxed">
-            Awarded 1st Runner-Up in the Software Category for developing
-            HospiConnect — an Emergency Healthcare Coordination Platform
-            connecting patients, ambulances, and hospitals in real-time.
+            Working as a Data Analyst Intern in the HPC Tech Group, contributing to Green500 and TOP500 supercomputing analytics, 
+            machine learning-based data processing, and AI-driven research workflows.
           </p>
-
-          <div className="space-y-3">
-            <div className="text-neutral-300">✓ 1st Runner-Up</div>
-
-            <div className="text-neutral-300">✓ Software Category Award</div>
-
-            <div className="text-neutral-300">✓ HospiConnect Platform</div>
-          </div>
         </div>
       ),
     },
 
     {
-      title: "2025",
+      title: "Projects",
       content: (
         <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 backdrop-blur-sm">
           <p className="text-white font-bold text-2xl mb-4">
-            🥈 5th Regional Conclave
+            🤖 4+ AI Projects Built
           </p>
 
           <p className="mb-6 text-neutral-400 leading-relaxed">
-            Recognized for innovation and impactful problem-solving through
-            healthcare technology solutions. Presented HospiConnect among
-            competing student projects and prototypes.
+            Designed and developed multiple AI-powered applications including ResearchOS, GaleMed AI, GapLens AI, and CropCare AI 
+            using Machine Learning, RAG, LangChain, LangGraph, and LLM technologies
           </p>
-
-          <div className="space-y-3">
-            <div className="text-neutral-300">✓ 2nd Prize Winner</div>
-
-            <div className="text-neutral-300">✓ Healthcare Innovation</div>
-
-            <div className="text-neutral-300">✓ Regional Recognition</div>
-          </div>
         </div>
       ),
     },
 
     {
-      title: "2025",
+      title: "Academic Progress",
       content: (
         <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 backdrop-blur-sm">
           <p className="text-white font-bold text-2xl mb-4">
-            🏅 Wangoes Excellence Award
+            🎓 9.28 SGPA
           </p>
 
           <p className="mb-6 text-neutral-400 leading-relaxed">
-            Selected among the top teams from 1661+ registrations at Prayatna
-            3.0 National Hackathon. Developed HospiConnect during a 36-hour
-            hackathon with applications for citizens, ambulance drivers, and
-            hospitals.
+            Maintained a consistent academic record with a 9.28 SGPA while actively participating in AI projects, 
+            technical competitions, and industry-oriented learning.
           </p>
-
-          <div className="space-y-3">
-            <div className="text-neutral-300">✓ Top Team Recognition</div>
-
-            <div className="text-neutral-300">✓ 1661+ Registrations</div>
-
-            <div className="text-neutral-300">✓ 36-Hour Product Build</div>
-          </div>
         </div>
       ),
     },
 
     {
-      title: "Leadership",
+      title: "Publication",
       content: (
         <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 backdrop-blur-sm">
           <p className="text-white font-bold text-2xl mb-4">
-            👨‍💻 Joint Technical Secretary
+            📄 Research Paper Publication
           </p>
 
           <p className="mb-6 text-neutral-400 leading-relaxed">
-            Contributing to technical initiatives, coordinating events,
-            supporting student innovation, and helping organize technical
-            activities within the department.
+            Published a research paper titled 'Design and Development of a Low-Cost Self-Driving Car Platform for Educational and Experimental Applications'
+             in IJARESM (International Journal of All Research Education & Scientific Methods), Volume 14, Issue 4, April 2026.
           </p>
-
-          <div className="space-y-3">
-            <div className="text-neutral-300">✓ Technical Leadership</div>
-
-            <div className="text-neutral-300">✓ Event Coordination</div>
-
-            <div className="text-neutral-300">✓ Community Contribution</div>
-          </div>
         </div>
       ),
     },
@@ -146,9 +99,9 @@ const Achievements = () => {
         </h2>
 
         <p className="mt-6 text-neutral-500 text-lg max-w-2xl">
-          A timeline of milestones, competitions, leadership experiences, and
-          products that shaped my journey as a developer and aspiring AI
-          engineer.
+         A timeline of projects, internships, and milestones — from
+          multi-agent research systems to RAG-based assistants — that
+          shaped my path as an aspiring AI/ML Engineer.
         </p>
       </div>
 
