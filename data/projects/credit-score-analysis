@@ -1,0 +1,272 @@
+export const creditScoreAnalysis = {
+  slug: "credit-score-analysis",
+
+  featured: false,
+
+  title: "Credit Score Analysis & Prediction",
+
+  shortTitle: "Banking Risk Analytics System",
+
+  category: "Data Analytics",
+
+  year: "2025",
+
+  status: "EDA & Analytics Project",
+
+  tagline:
+    "Leveraging data analytics and machine learning to understand customer creditworthiness and financial risk.",
+
+  oneLiner:
+    "A banking analytics project focused on analyzing customer financial behavior and predicting credit scores using data-driven insights.",
+
+  description:
+    "This project focuses on analyzing banking and customer financial data to identify patterns affecting credit scores. Through exploratory data analysis, statistical techniques, and predictive modeling, the system helps understand how factors such as income, loans, repayment history, and financial behavior influence an individual's creditworthiness.",
+
+  coverImage: "/projects/credit-score/cover.png",
+
+  heroImage: "/projects/credit-score/hero.png",
+
+  gallery: [
+    "/projects/credit-score/1.png",
+    "/projects/credit-score/2.png",
+    "/projects/credit-score/3.png",
+    "/projects/credit-score/4.png",
+  ],
+
+  github: {
+    repository:
+      "https://github.com/ved-2/credit_score_analysis",
+  },
+
+  liveDemo: null,
+
+  team: {
+    name: "Academic Project",
+
+    members: [
+      "Vedant Kolte",
+    ],
+  },
+
+  duration: "Data Analytics Project",
+
+  problem: {
+    title: "The Problem",
+
+    description:
+      "Financial institutions rely heavily on credit scores to evaluate customer risk. Incorrect assessments can lead to loan defaults, financial losses, or missed lending opportunities. Understanding the factors influencing credit scores is essential for accurate decision-making.",
+
+    challenges: [
+      "Large customer datasets",
+      "Multiple influencing variables",
+      "Risk assessment complexity",
+      "Data inconsistencies",
+      "Customer behavior analysis",
+      "Financial decision support",
+    ],
+  },
+
+  solution: {
+    title: "The Solution",
+
+    description:
+      "The project uses exploratory data analysis, statistical techniques, and machine learning methods to identify important financial indicators and evaluate their impact on customer credit scores.",
+
+    keyPoints: [
+      "Credit score analysis",
+      "Risk assessment",
+      "Data visualization",
+      "Customer segmentation",
+      "Feature importance analysis",
+      "Predictive modeling",
+    ],
+  },
+
+  features: [
+    {
+      title: "Exploratory Data Analysis",
+      icon: "📊",
+      description:
+        "Analyzes customer financial data to uncover patterns and trends.",
+    },
+
+    {
+      title: "Credit Risk Insights",
+      icon: "🏦",
+      description:
+        "Identifies financial indicators affecting customer creditworthiness.",
+    },
+
+    {
+      title: "Customer Segmentation",
+      icon: "👥",
+      description:
+        "Groups customers based on financial behavior and risk profiles.",
+    },
+
+    {
+      title: "Visualization Dashboard",
+      icon: "📈",
+      description:
+        "Provides graphical insights into credit score distributions and trends.",
+    },
+
+    {
+      title: "Statistical Analysis",
+      icon: "📉",
+      description:
+        "Measures relationships between financial variables and credit scores.",
+    },
+
+    {
+      title: "Predictive Modeling",
+      icon: "🤖",
+      description:
+        "Applies machine learning techniques to estimate customer credit categories.",
+    },
+  ],
+
+  architecture: {
+    title: "Analytics Workflow",
+
+    flow: [
+      "Raw Banking Data",
+      "Data Cleaning",
+      "Exploratory Analysis",
+      "Feature Engineering",
+      "Visualization",
+      "Model Building",
+      "Business Insights",
+    ],
+
+    description:
+      "Customer financial data is processed, cleaned, analyzed, and transformed into actionable insights through statistical analysis and predictive modeling techniques.",
+  },
+
+  techStack: {
+    frontend: [
+      "Jupyter Notebook",
+    ],
+
+    backend: [
+      "Python",
+    ],
+
+    ai: [
+      "Classification Models",
+      "Predictive Analytics",
+    ],
+
+    tools: [
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-Learn",
+      "Jupyter Notebook",
+    ],
+  },
+
+  responsibilities: [
+    "Data Cleaning",
+    "Exploratory Data Analysis",
+    "Feature Engineering",
+    "Data Visualization",
+    "Statistical Analysis",
+    "Predictive Modeling",
+    "Insight Generation",
+  ],
+
+  challengesFaced: [
+    {
+      title: "Data Quality",
+
+      description:
+        "Handling missing values, inconsistencies, and noisy financial records.",
+    },
+
+    {
+      title: "Feature Selection",
+
+      description:
+        "Identifying the financial variables most relevant to credit score prediction.",
+    },
+
+    {
+      title: "Business Interpretation",
+
+      description:
+        "Converting analytical findings into meaningful business recommendations.",
+    },
+
+    {
+      title: "Model Evaluation",
+
+      description:
+        "Ensuring predictive models generalized well to unseen customer data.",
+    },
+  ],
+
+  achievements: [
+    {
+      title: "Banking Analytics Project",
+      event: "Data Analytics Showcase",
+    },
+
+    {
+      title: "Credit Risk Assessment Study",
+      event: "Portfolio Project",
+    },
+  ],
+
+  impact: {
+    title: "Impact",
+
+    points: [
+      "Improves understanding of credit risk",
+      "Supports lending decisions",
+      "Demonstrates business analytics skills",
+      "Provides actionable financial insights",
+      "Showcases end-to-end analytics workflow",
+    ],
+  },
+
+  futureScope: [
+    "Real-Time Credit Monitoring",
+    "Advanced Risk Models",
+    "Fraud Detection Integration",
+    "Explainable AI Systems",
+    "Financial Recommendation Engines",
+    "Banking Dashboard Deployment",
+  ],
+
+  metrics: [
+    {
+      label: "Domain",
+      value: "Banking Analytics",
+    },
+
+    {
+      label: "Project Type",
+      value: "EDA + Prediction",
+    },
+
+    {
+      label: "Industry",
+      value: "FinTech",
+    },
+
+    {
+      label: "Focus",
+      value: "Credit Risk",
+    },
+  ],
+
+  seo: {
+    title:
+      "Credit Score Analysis & Prediction - Banking Analytics Project",
+
+    description:
+      "Data analytics and machine learning project focused on understanding credit scores, customer risk profiles, and financial decision-making through exploratory data analysis and predictive modeling.",
+  },
+};
