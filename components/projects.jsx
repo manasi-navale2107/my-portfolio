@@ -50,15 +50,6 @@ const projects = [
     href: "/projects/green500-dashboard",
     gradient: "from-emerald-500 via-teal-500 to-cyan-500",
   },
-  {
-    title: "Self-Driving Car Platform",
-    emoji: "🚗",
-    category: "Research Project",
-    description:
-      "A low-cost self-driving car platform developed for educational and experimental applications, later published as a research paper.",
-    href: "/projects/self-driving-car",
-    gradient: "from-orange-500 via-amber-500 to-yellow-500",
-  },
 ];
 
 export default function ProjectsSection() {

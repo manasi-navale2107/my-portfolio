@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Vedant Kolte",
+  title: "manasi_navale_07",
   description: "Portfolio",
 };
 

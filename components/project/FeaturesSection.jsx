@@ -2,41 +2,64 @@
 
 import { Check, Zap, Target, Shield, Gauge, Users } from "lucide-react";
 
-const iconMap = {
-  sos: Zap,
-  hospital: Target,
-  tracking: Gauge,
-  ai: Shield,
-  dashboard: Users,
-  transfer: Check,
-};
+const defaultFeatures = [
+  {
+    title: "RAG-Based Question Answering",
+    description:
+      "Built retrieval-augmented generation workflows using document chunking, embeddings, vector search, and LLM response generation.",
+  },
+  {
+    title: "Multi-Agent Research Workflows",
+    description:
+      "Developed AI systems that automate research planning, web search, information extraction, reasoning, and structured report generation.",
+  },
+  {
+    title: "Machine Learning Pipelines",
+    description:
+      "Applied classification, regression, NLP, feature engineering, and model evaluation techniques to build practical ML solutions.",
+  },
+  {
+    title: "Data Cleaning & EDA",
+    description:
+      "Performed preprocessing, missing value handling, exploratory analysis, and visualization on real-world datasets including Green500 and TOP500.",
+  },
+  {
+    title: "Interactive Dashboards",
+    description:
+      "Created data analytics dashboards using Streamlit to present insights clearly through KPIs, charts, trends, and visual analysis.",
+  },
+  {
+    title: "AI Project Development",
+    description:
+      "Built end-to-end AI applications such as ResearchOS, GaleMed AI, GapLens AI, and CropCare AI using modern AI tools and frameworks.",
+  },
+];
 
 export default function FeaturesSection({ project }) {
+  const features = project?.features || defaultFeatures;
+
   return (
     <section className="relative py-32">
-      {/* Background Glow */}
       <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/5 blur-[140px]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
-        {/* Heading */}
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-cyan-400 uppercase tracking-[0.3em] text-xs">
-            Core Features
+            Core Capabilities
           </span>
 
           <h2 className="mt-4 text-5xl md:text-6xl font-black text-white">
-            What Makes It Powerful
+            What Makes My Work Strong
           </h2>
 
           <p className="mt-6 text-zinc-400 text-lg leading-relaxed">
-            Packed with intelligent features designed to solve every aspect of
-            the problem and deliver exceptional user experiences.
+            A combination of Generative AI, Machine Learning, Data Analytics,
+            and project-building skills applied across real-world AI systems.
           </p>
         </div>
 
-        {/* Features Grid */}
         <div className="mt-20 grid md:grid-cols-2 gap-6">
-          {project.features.map((feature, index) => {
+          {features.map((feature, index) => {
             const icons = [Zap, Target, Gauge, Shield, Users, Check];
             const Icon = icons[index % icons.length];
 
@@ -65,21 +88,19 @@ export default function FeaturesSection({ project }) {
           })}
         </div>
 
-        {/* Feature Showcase */}
         <div className="mt-20 rounded-[32px] border border-zinc-800 bg-gradient-to-br from-cyan-500/5 to-transparent backdrop-blur-xl p-12">
           <h3 className="text-3xl font-bold text-white">
-            Integrated Ecosystem
+            AI-Driven Development Approach
           </h3>
 
           <p className="mt-4 text-zinc-400 leading-relaxed max-w-3xl">
-            All features work together seamlessly, creating a cohesive
-            experience that's greater than the sum of its parts. From initial
-            contact to resolution, every touchpoint is optimized for efficiency
-            and user satisfaction.
+            My projects combine problem understanding, data preparation,
+            machine learning, retrieval-based AI, and clean implementation to
+            build useful AI-powered applications from idea to working prototype.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            {project.features.map((feature, index) => (
+            {features.map((feature, index) => (
               <div
                 key={index}
                 className="flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2"

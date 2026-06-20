@@ -2,34 +2,47 @@
 
 import { AlertCircle, Wrench, Lightbulb } from "lucide-react";
 
+const defaultChallenges = [
+  "Handling missing and inconsistent data in Green500 and TOP500 datasets",
+  "Building reliable RAG workflows with accurate document retrieval",
+  "Designing multi-agent AI workflows for research automation",
+  "Improving model output quality through preprocessing and evaluation",
+];
+
+const descriptions = [
+  "I worked on data cleaning, preprocessing, feature handling, and validation to make the dataset suitable for analysis and machine learning workflows.",
+  "I used document chunking, embeddings, vector search, and grounded response generation to make answers more reliable and context-aware.",
+  "I connected search, reasoning, extraction, and report generation steps to create structured AI workflows using LangChain and LangGraph.",
+  "I focused on better input preparation, model evaluation, and result interpretation to improve the overall quality of AI and ML outputs.",
+];
+
 export default function ChallengesSection({ project }) {
   const icons = [AlertCircle, Wrench, Lightbulb];
+  const challenges = project?.challenges || defaultChallenges;
 
   return (
     <section className="relative py-32">
-      {/* Background Glow */}
       <div className="absolute right-1/2 top-1/2 h-[500px] w-[500px] translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-500/5 blur-[140px]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
-        {/* Heading */}
         <div className="max-w-3xl">
           <span className="text-orange-400 uppercase tracking-[0.3em] text-xs">
             Challenges
           </span>
 
           <h2 className="mt-4 text-5xl md:text-6xl font-black text-white">
-            Problems We Solved
+            Problems I Solved
           </h2>
 
           <p className="mt-6 text-zinc-400 text-lg leading-relaxed">
-            Building this solution came with technical and logistical
-            challenges. Here's how we overcame them.
+            My projects involved real challenges across data cleaning, machine
+            learning, RAG systems, and AI workflow design. Here is how I
+            approached and solved them.
           </p>
         </div>
 
-        {/* Challenges Grid */}
         <div className="mt-16 grid md:grid-cols-2 gap-6">
-          {project.challenges.map((challenge, index) => {
+          {challenges.map((challenge, index) => {
             const Icon = icons[index % icons.length];
 
             return (
@@ -48,8 +61,8 @@ export default function ChallengesSection({ project }) {
                     </h3>
 
                     <p className="mt-3 text-zinc-400 leading-relaxed">
-                      We implemented sophisticated solutions and best practices
-                      to overcome this challenge and ensure optimal performance.
+                      {descriptions[index] ||
+                        "I applied structured problem-solving, debugging, and iterative improvement to build a more reliable and practical solution."}
                     </p>
                   </div>
                 </div>
@@ -57,8 +70,6 @@ export default function ChallengesSection({ project }) {
             );
           })}
         </div>
-
-        
       </div>
     </section>
   );

@@ -87,7 +87,7 @@ const GithubActivity = () => {
 
           <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-4">
             <img
-              src="https://github-readme-streak-stats.herokuapp.com/?user=ved-2&theme=tokyonight&hide_border=true&background=000000"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=manasi-navale2107&theme=tokyonight&hide_border=true&background=000000"
               alt="GitHub Streak"
               className="w-full"
             />
@@ -102,7 +102,7 @@ const GithubActivity = () => {
 
           <div className="flex justify-center overflow-x-auto">
             <GitHubCalendar
-              username="Manasi"
+              username="manasi-navale2107"
               colorScheme="dark"
               fontSize={15}
               blockSize={15}

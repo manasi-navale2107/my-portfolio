@@ -4,14 +4,14 @@ import React from "react";
 import CardSwap, { Card } from "./bloc/Components/CardSwap/CardSwap";
 import LogoLoop from "./(components)/LogoLoop";
 
-// Icons
 import {
   FaHtml5,
   FaCss3Alt,
   FaReact,
   FaNodeJs,
   FaGitAlt,
-  FaCube,
+  FaJava,
+  FaLinux,
 } from "react-icons/fa";
 
 import {
@@ -31,57 +31,72 @@ import {
   SiGithub,
   SiVercel,
   SiNodedotjs,
+  SiJupyter,
 } from "react-icons/si";
 
 const skillGroups = [
   {
-    category: "AI & LLM Engineering",
-    items: ["LangChain", "RAG", "AI Agents", "Prompt Engineering", "Python"],
-  },
-  {
-    category: "Frontend Development",
+    category: "Generative AI",
     items: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Shadcn UI",
+      "LangChain",
+      "LangGraph",
+      "RAG",
+      "Prompt Engineering",
+      "LLM Applications",
+      "Multi-Agent Systems",
     ],
   },
   {
-    category: "Backend Development",
-    items: ["Node.js", "Express", "REST APIs", "Prisma", "Strapi"],
+    category: "Machine Learning",
+    items: [
+      "Scikit-Learn",
+      "Classification",
+      "Regression",
+      "NLP",
+      "Feature Engineering",
+      "Model Evaluation",
+    ],
   },
   {
-    category: "Databases",
-    items: ["MongoDB", "PostgreSQL", "Prisma"],
+    category: "Data Analytics",
+    items: [
+      "Pandas",
+      "NumPy",
+      "Data Cleaning",
+      "EDA",
+      "Data Visualization",
+      "Streamlit",
+    ],
   },
   {
-    category: "Design & Tools",
-    items: ["Figma", "Git", "GitHub", "Vercel", "Vite", "Spline"],
+    category: "Programming",
+    items: ["Python", "Java", "Data Structures & Algorithms", "OOP"],
+  },
+  {
+    category: "AI Libraries & Tools",
+    items: ["Hugging Face", "ChromaDB", "Tavily", "Groq"],
+  },
+  {
+    category: "Tools & Platforms",
+    items: ["Git", "GitHub", "Linux", "Jupyter Notebook", "VS Code", "Vercel"],
   },
 ];
 
 const techLogos = [
-  { node: <SiReact className="text-cyan-400" />, title: "React" },
-  { node: <SiNextdotjs className="text-white" />, title: "Next.js" },
-  { node: <SiTypescript className="text-blue-500" />, title: "TypeScript" },
-  { node: <SiTailwindcss className="text-cyan-400" />, title: "Tailwind CSS" },
-  { node: <SiNodedotjs className="text-green-500" />, title: "Node.js" },
-  { node: <SiMongodb className="text-green-600" />, title: "MongoDB" },
-  { node: <SiPostgresql className="text-blue-400" />, title: "PostgreSQL" },
-  { node: <SiPrisma className="text-white" />, title: "Prisma" },
-  { node: <SiOpenai className="text-green-400" />, title: "OpenAI" },
   { node: <SiPython className="text-yellow-400" />, title: "Python" },
+  { node: <FaJava className="text-red-400" />, title: "Java" },
+  { node: <SiOpenai className="text-green-400" />, title: "LLM Applications" },
+  { node: <span className="text-green-400 text-5xl">🦜</span>, title: "LangChain" },
+  { node: <span className="text-violet-400 text-5xl">🧠</span>, title: "RAG" },
+  { node: <span className="text-cyan-400 text-5xl">🤖</span>, title: "AI Agents" },
+  { node: <span className="text-orange-400 text-5xl">📊</span>, title: "Data Analytics" },
+  { node: <SiJupyter className="text-orange-400" />, title: "Jupyter Notebook" },
+  { node: <FaLinux className="text-white" />, title: "Linux" },
   { node: <SiGithub className="text-white" />, title: "GitHub" },
   { node: <SiVercel className="text-white" />, title: "Vercel" },
 ];
 
 const iconMap = {
-  // Frontend
   HTML: <FaHtml5 className="text-orange-400" />,
   CSS: <FaCss3Alt className="text-blue-400" />,
   JavaScript: <SiJavascript className="text-yellow-400" />,
@@ -91,39 +106,59 @@ const iconMap = {
   "Tailwind CSS": <SiTailwindcss className="text-cyan-400" />,
   "Shadcn UI": <span className="text-white">🎨</span>,
 
-  // Backend
   "Node.js": <FaNodeJs className="text-green-500" />,
   Express: <span className="text-white">⚡</span>,
   Strapi: <SiStrapi className="text-indigo-400" />,
   "REST APIs": <span className="text-orange-400">🔗</span>,
 
-  // Databases
   MongoDB: <SiMongodb className="text-green-600" />,
   PostgreSQL: <SiPostgresql className="text-blue-400" />,
   Prisma: <SiPrisma className="text-white" />,
 
-  // AI
   Python: <SiPython className="text-yellow-400" />,
+  Java: <FaJava className="text-red-400" />,
   LangChain: <span className="text-green-400">🦜</span>,
+  LangGraph: <span className="text-emerald-400">🕸️</span>,
   RAG: <span className="text-violet-400">🧠</span>,
-  "AI Agents": <span className="text-cyan-400">🤖</span>,
   "Prompt Engineering": <span className="text-yellow-400">✨</span>,
-  "Gemini API": <span className="text-blue-400">♊</span>,
-  "OpenAI API": <SiOpenai className="text-green-400" />,
+  "LLM Applications": <SiOpenai className="text-green-400" />,
+  "Multi-Agent Systems": <span className="text-cyan-400">🤖</span>,
 
-  // Tools
+  "Scikit-Learn": <span className="text-orange-400">📊</span>,
+  Classification: <span className="text-blue-400">📌</span>,
+  Regression: <span className="text-purple-400">📈</span>,
+  NLP: <span className="text-pink-400">💬</span>,
+  "Feature Engineering": <span className="text-yellow-400">🛠️</span>,
+  "Model Evaluation": <span className="text-green-400">✅</span>,
+
+  Pandas: <span className="text-violet-400">🐼</span>,
+  NumPy: <span className="text-blue-400">🔢</span>,
+  "Data Cleaning": <span className="text-cyan-400">🧹</span>,
+  EDA: <span className="text-orange-400">🔍</span>,
+  "Data Visualization": <span className="text-pink-400">📊</span>,
+  Streamlit: <span className="text-red-400">🎈</span>,
+
+  "Data Structures & Algorithms": <span className="text-blue-400">🧩</span>,
+  OOP: <span className="text-purple-400">🏗️</span>,
+
+  "Hugging Face": <span className="text-yellow-400">🤗</span>,
+  ChromaDB: <span className="text-violet-400">🗄️</span>,
+  Tavily: <span className="text-cyan-400">🌐</span>,
+  Groq: <span className="text-orange-400">⚡</span>,
+
   Git: <FaGitAlt className="text-red-500" />,
   GitHub: <SiGithub className="text-white" />,
+  Linux: <FaLinux className="text-white" />,
+  "Jupyter Notebook": <SiJupyter className="text-orange-400" />,
+  "VS Code": <span className="text-blue-400">💻</span>,
   Vercel: <SiVercel className="text-white" />,
   Vite: <SiVite className="text-purple-400" />,
   Figma: <SiFigma className="text-pink-400" />,
-  Spline: <FaCube className="text-blue-300" />,
 };
 
 const Skills = () => {
   return (
     <section className="min-h-screen py-20 px-6 text-white mb-10">
-      {/* Logo Loop */}
       <div className="max-w-7xl mx-auto mb-24">
         <LogoLoop
           logos={techLogos}
@@ -135,33 +170,31 @@ const Skills = () => {
           scaleOnHover
           fadeOut
           fadeOutColor="#000000"
-          ariaLabel="Tech Stack"
+          ariaLabel="AI ML Tech Stack"
         />
       </div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Left Side */}
         <div className="space-y-6">
           <p className="uppercase tracking-[0.4em] text-violet-400 text-sm">
             Tech Stack
           </p>
 
           <h2 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
-            Technologies I Use
+            AI, ML & Data
             <br />
-            To Bring Ideas
+            Technologies
             <br />
-            To Life.
+            I Work With.
           </h2>
 
           <p className="text-gray-400 text-lg max-w-xl">
-            From AI-powered applications to scalable full-stack products, these
-            are the technologies I use to build, deploy and innovate.
+            From Generative AI and RAG systems to machine learning models,
+            data analytics dashboards, and multi-agent AI workflows, these are
+            the technologies I use to build practical AI-powered solutions.
           </p>
         </div>
 
-        {/* Right Side */}
         <div className="h-[600px] relative">
           <CardSwap
             cardDistance={80}

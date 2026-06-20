@@ -67,7 +67,7 @@ const Aboutme = () => {
           <div className="flex justify-center">
             <div className="relative">
               <Image
-                src="/ved.png"
+                src="/manasi.png"
                 alt="Manasi"
                 width={450}
                 height={450}
