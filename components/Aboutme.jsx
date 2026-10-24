@@ -49,7 +49,7 @@ const Aboutme = () => {
 
             <div className="flex gap-10 mt-10">
               <div>
-                <h3 className="text-3xl font-bold">5</h3>
+                <h3 className="text-3xl font-bold">9+</h3>
                 <p className="text-gray-500">Projects Built</p>
               </div>
 
