@@ -1,19 +1,22 @@
+
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import TextType from "@/components/bloc/TextAnimations/TextType/TextType";
-import { HiAcademicCap } from "react-icons/hi2";
-import LightPillar from "./(components)/LightPillar";
-import Lightning from "./(components)/Lightning";
+import React from "react";
 import TrueFocus from "./(components)/TrueFocus";
+import Lightning from "./(components)/Lightning";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background Effect - Only inside Hero */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <Lightning hue={260} xOffset={0} speed={1} intensity={1} size={1} />
+        <Lightning
+          hue={260}
+          xOffset={0}
+          speed={1}
+          intensity={1}
+          size={1}
+        />
       </div>
 
       {/* Hero Content */}
@@ -23,7 +26,7 @@ const Hero = () => {
         </h2>
 
         <TrueFocus
-          sentence="AI Code Design"
+          sentence="Data Models Agents"
           manualMode={false}
           blurAmount={5}
           borderColor="#5227FF"
@@ -31,8 +34,12 @@ const Hero = () => {
           pauseBetweenAnimations={1}
         />
 
-        <h3 className="mt-6 text-2xl font-bold text-white">You'll find me.</h3>
+        <h3 className="mt-6 text-2xl font-bold text-white">
+          You'll find me.
+        </h3>
       </div>
+
+      {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center">
         <p className="text-xs uppercase tracking-[0.35em] text-gray-500 mb-3">
           Scroll to know me!
