@@ -1,14 +1,26 @@
+
 "use client";
 
 import Link from "next/link";
-import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ArrowUpRight,
+} from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-zinc-900 bg-black text-white">
+    <footer
+      id="contact"
+      className="relative overflow-hidden border-t border-zinc-900 bg-black text-white"
+    >
       <div className="mx-auto max-w-7xl px-6 py-20">
+
         {/* Top Section */}
         <div className="grid lg:grid-cols-2 gap-16 pb-16 border-b border-zinc-900">
+
+          {/* Personal Introduction */}
           <div>
             <span className="text-violet-400 uppercase tracking-[0.3em] text-xs">
               Let's Build Something Amazing
@@ -19,16 +31,22 @@ export default function Footer() {
             </h2>
 
             <p className="mt-4 text-lg text-zinc-400 max-w-xl">
-              AI/ML Engineer and Product Builder creating
-              intelligent solutions across Healthcare, AgriTech,
-              Research, and Career-Tech.
+              Artificial Intelligence & Data Science undergraduate
+              passionate about Data Engineering, Machine Learning,
+              and Agentic AI. Building intelligent applications,
+              multi-agent systems, and end-to-end data pipelines
+              that transform ideas and data into meaningful
+              real-world solutions.
             </p>
 
+            {/* Social Links */}
             <div className="flex gap-4 mt-8">
               <a
                 href="https://github.com/manasi-navale2107"
                 target="_blank"
-                className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 transition"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 hover:text-violet-400 transition"
               >
                 <Github size={20} />
               </a>
@@ -36,149 +54,226 @@ export default function Footer() {
               <a
                 href="https://linkedin.com/in/manasinavale07"
                 target="_blank"
-                className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 transition"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 hover:text-violet-400 transition"
               >
                 <Linkedin size={20} />
               </a>
 
               <a
                 href="mailto:navalemanasi@gmail.com"
-                className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 transition"
+                aria-label="Send Email"
+                className="p-3 rounded-xl border border-zinc-800 hover:border-violet-500 hover:text-violet-400 transition"
               >
                 <Mail size={20} />
               </a>
             </div>
           </div>
 
+          {/* Opportunities */}
           <div className="flex items-center justify-start lg:justify-end">
-            <div className="text-right">
-              <h3 className="text-2xl font-bold">Open for Opportunities</h3>
+            <div className="text-left lg:text-right">
+              <h3 className="text-2xl font-bold">
+                Open for Opportunities
+              </h3>
 
-              <p className="mt-3 text-zinc-400">
-                Internships • Freelance • AI Projects • Machine Learning Models
+              <p className="mt-3 text-zinc-400 max-w-md">
+                Data Engineering • AI/ML Engineering •
+                Generative AI • Agentic AI
+              </p>
+
+              <p className="mt-3 text-zinc-500 text-sm">
+                Internships • Entry-Level Roles •
+                Technical Collaborations
               </p>
 
               <a
                 href="mailto:navalemanasi@gmail.com"
-                className="inline-flex items-center gap-2 mt-6 text-violet-400 hover:text-violet-300"
+                className="inline-flex items-center gap-2 mt-6 text-violet-400 hover:text-violet-300 transition"
               >
-                Get in touch
+                Get in Touch
                 <ArrowUpRight size={18} />
               </a>
             </div>
           </div>
         </div>
 
-        {/* Middle */}
+        {/* Middle Section */}
         <div className="grid md:grid-cols-3 gap-12 py-16">
-          <div>
-            <h4 className="font-bold mb-5 text-white">Navigation</h4>
 
-            <div className="space-y-3 text-zinc-400">
-              <Link href="#about">About</Link>
-              <br />
-              <Link href="#projects">Projects</Link>
-              <br />
-              <Link href="#skills">Skills</Link>
-              <br />
-              <Link href="#achievements">Achievements</Link>
-              <br />
-              <Link href="#contact">Contact</Link>
+          {/* Navigation */}
+          <div>
+            <h4 className="font-bold mb-5 text-white">
+              Navigation
+            </h4>
+
+            <div className="flex flex-col gap-3 text-zinc-400">
+              <Link
+                href="/#about"
+                className="hover:text-violet-400 transition"
+              >
+                About
+              </Link>
+
+              <Link
+                href="/#projects"
+                className="hover:text-violet-400 transition"
+              >
+                Projects
+              </Link>
+
+              <Link
+                href="/#skills"
+                className="hover:text-violet-400 transition"
+              >
+                Skills
+              </Link>
+
+              <Link
+                href="/#achievements"
+                className="hover:text-violet-400 transition"
+              >
+                Achievements
+              </Link>
+
+              <Link
+                href="/#contact"
+                className="hover:text-violet-400 transition"
+              >
+                Contact
+              </Link>
             </div>
           </div>
 
+          {/* Featured Projects */}
           <div>
-            <h4 className="font-bold mb-5 text-white">Featured Projects</h4>
+            <h4 className="font-bold mb-5 text-white">
+              Featured Projects
+            </h4>
 
-            <div className="space-y-3 text-zinc-400">
-              <div className="space-y-2">
-                <Link
-                  href="/projects/hospiconnect"
-                  className="block hover:text-red-400 transition"
-                >
-                  🔬 ResearchOS
-                </Link>
+            <div className="flex flex-col gap-3 text-zinc-400">
 
-                <Link
-                  href="/projects/credify"
-                  className="block hover:text-cyan-400 transition"
-                >
-                  🏥 GaleMed AI
-                </Link>
+              <Link
+                href="/projects/querymind-ai"
+                className="block hover:text-violet-400 transition"
+              >
+                🧠 QueryMind AI
+              </Link>
 
-                <Link
-                  href="/projects/algo-animate"
-                  className="block hover:text-yellow-400 transition"
-                >
-                  🎯 GapLens AI
-                </Link>
+              <Link
+                href="/projects/retailflow"
+                className="block hover:text-cyan-400 transition"
+              >
+                🔄 RetailFlow
+              </Link>
 
-                <Link
-                  href="/projects/linkedin-post-generator-ai-agent"
-                  className="block hover:text-sky-400 transition"
-                >
-                  🌾 CropCare AI
-                </Link>
+              <Link
+                href="/projects/researchos"
+                className="block hover:text-purple-400 transition"
+              >
+                🤖 ResearchOS
+              </Link>
 
-                <Link
-                  href="/projects/langgraph-persistent-chatbot"
-                  className="block hover:text-violet-400 transition"
-                >
-                  🤖 LangGraph Persistent Chatbot
-                </Link>
+              <Link
+                href="/projects/living-rag"
+                className="block hover:text-pink-400 transition"
+              >
+                📚 Living RAG
+              </Link>
 
-                <Link
-                  href="/projects/youtube-rag-chatbot"
-                  className="block hover:text-pink-400 transition"
-                >
-                  🎥 YouTube RAG Chatbot
-                </Link>
-              </div>
+              <Link
+                href="/projects/ridesense-ai"
+                className="block hover:text-orange-400 transition"
+              >
+                🚕 RideSense AI
+              </Link>
+
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-2 mt-3 text-violet-400 hover:text-violet-300 transition"
+              >
+                Explore All Projects
+                <ArrowUpRight size={16} />
+              </Link>
+
             </div>
           </div>
 
+          {/* Contact */}
           <div>
-            <h4 className="font-bold mb-5 text-white">Contact</h4>
+            <h4 className="font-bold mb-5 text-white">
+              Contact & Collaboration
+            </h4>
 
-            <div className="space-y-3 text-zinc-400">
-              <p>📍 Pune, Maharashtra</p>
-              <p>📧 navalemanasi@gmail.com</p>
-              <p>🤝 Open to Collaboration</p>
-              <p>🚀 Looking for AI Opportunities</p>
+            <div className="space-y-4 text-zinc-400">
+              <p>📍 Pune, Maharashtra, India</p>
+
+              <a
+                href="mailto:navalemanasi@gmail.com"
+                className="block break-all hover:text-violet-400 transition"
+              >
+                📧 navalemanasi@gmail.com
+              </a>
+
+              <p>
+                🎓 B.E. Artificial Intelligence &
+                Data Science | 2027
+              </p>
+
+              <p>
+                🤝 Open to Technical Collaboration
+              </p>
+
+              <p>
+                🚀 Exploring Data Engineering,
+                AI/ML & Agentic AI Opportunities
+              </p>
             </div>
           </div>
+
         </div>
 
-        {/* Bottom */}
+        {/* Bottom Section */}
         <div className="border-t border-zinc-900 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-zinc-500">
-            © Manasi Navale. All rights reserved.
+
+          <p className="text-zinc-500 text-sm">
+            © {new Date().getFullYear()} Manasi Navale.
+            All rights reserved.
           </p>
 
-          <p className="text-zinc-600 italic">"From ideas to impact."</p>
+          <p className="text-zinc-600 italic text-sm">
+            "Turning Data into Intelligence,
+            and Ideas into Impact."
+          </p>
+
         </div>
       </div>
+
+      {/* Space for Background Text */}
       <div className="mb-60"></div>
+
       {/* Huge Background Text */}
       <div className="pointer-events-none absolute bottom-0 left-0 w-full overflow-hidden">
         <h1
           className="
-          text-center
-          text-[18vw]
-          font-black
-          leading-none
-          tracking-tight
-          text-transparent
-          bg-clip-text
-          bg-gradient-to-b
-          from-violet-500/20
-          via-violet-500/10
-          to-transparent
+            text-center
+            text-[18vw]
+            font-black
+            leading-none
+            tracking-tight
+            text-transparent
+            bg-clip-text
+            bg-gradient-to-b
+            from-violet-500/20
+            via-violet-500/10
+            to-transparent
           "
         >
           Manasi
         </h1>
       </div>
+
     </footer>
   );
 }
